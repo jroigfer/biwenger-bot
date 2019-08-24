@@ -31,7 +31,7 @@ logger = logging.getLogger(__name__)
 def main():
     logger.info("Holaaa!!!")
     url = 'https://biwenger.as.com/api/v2/auth/login'
-    data = {"email": "xusmen69@gmail.com","password":"xX22021983b"}
+    data = {"email": "","password":" "}
     headers = {'Content-type': 'application/json', 'Accept': 'application/json, text/plain, */*'}
     contents = requests.post(url,data=json.dumps(data), headers=headers).json()
     logger.info("contents: " + repr(contents))
